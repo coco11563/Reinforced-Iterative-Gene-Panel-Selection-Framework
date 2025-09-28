@@ -18,6 +18,7 @@ Our method addresses the challenges of traditional gene panel selection approach
 ### Installation
 #### Clone the repository
 git clone https://github.com/coco11563/Reinforced-Iterative-Gene-Panel-Selection-Framework.git
+
 cd Reinforced-Iterative-Gene-Panel-Selection-Framework
 
 #### Create a virtual environment (recommended)
