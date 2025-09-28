@@ -257,6 +257,7 @@ class RIGPS:
             print(f"gene panel performance saved in result/{self.taskname}_performance.txt")
             print(f"gene panel saved in result/{self.taskname}_gene_panel.txt")
 
+        os.makedirs('./result', exist_ok=True)
         with open(f"result/{self.taskname}_performance.txt", "w") as f:
             for key in df[0]:
                 if key in ["feature_selected", "step", "stage"]:
