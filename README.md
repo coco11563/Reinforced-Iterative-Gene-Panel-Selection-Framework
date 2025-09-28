@@ -28,6 +28,44 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 
+### Demo
+
+1. Place the dataset in `./data`. The dataset is a two-dimensional matrix where each row represents a cell, each column represents a gene, and the last column indicates the cell type. Save the dataset in `HDF` format.
+2. Specify the dataset name (please keep it consistent with the dataset name in the `./data`) and hyperparameters.
+
+```
+from RIGPS import RIGPS
+
+# hyperparameters
+params = {
+    "LEARN_STEPS": 100,
+    "EXPLORE_STEPS": 100,
+    "LEARN_EPSILON": 0.999,
+    "EXPLORE_EPSILON": 0.6,
+    "N_STATES": 64,
+    "N_ACTIONS": 2,
+    "TARGET_REPLACE_ITER": 100,
+    "MEMORY_CAPACITY": 800,
+    "seed": 1,
+    "filter_model": ["RandomForest", "SVM", "KBest"],
+    "prior_model": ["mRMR", "KBest", "cellbrf"],
+    "INJECTION_NUMBER": 800,
+    "filter": True,
+}
+
+if __name__ == "__main__":
+    # dataset name
+    dataset='Dataset Name'
+
+    # X is gene express matrix, y is cell label
+    X, y = load(dataset)
+
+    # Run RIGPS to get the optimal gene subset
+    rigps = RIGPS(dataset, X, y, params)
+    optimal_gene_set = rigps.run()
+```
+
+
 ## 📑 Publication
 
 **Knowledge-Guided Gene Panel Selection for Label-Free Single-Cell RNA-Seq Data: A Reinforcement Learning Perspective**
