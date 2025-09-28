@@ -33,7 +33,7 @@ pip install -r requirements.txt
 1. Place the dataset in `./data`. The dataset is a two-dimensional matrix where each row represents a cell, each column represents a gene, and the last column indicates the cell type. Save the dataset in `HDF` format.
 2. Specify the dataset name (please keep it consistent with the dataset name in the `./data`) and hyperparameters.
 
-```
+```python
 from RIGPS import RIGPS
 
 # hyperparameters
