@@ -75,6 +75,10 @@ if __name__ == "__main__":
 
 IEEE Transactions on Computational Biology and Bioinformatics, 2025
 
+### Contributor
+
+We thank Weiliang Zhang (@Fugez, Co-First Author) for his independent coding work on this study. 
+
 ### Citation
 
 If you find this work useful, please cite our paper:
@@ -88,3 +92,4 @@ If you find this work useful, please cite our paper:
   publisher={IEEE},
   doi={10.1109/TCBBIO.2025.3609721}
 }```
+
