@@ -77,7 +77,7 @@ IEEE Transactions on Computational Biology and Bioinformatics, 2025
 
 ### Contributor
 
-We thank Weiliang Zhang (@Fugez, Co-First Author) for his independent coding work on this study. 
+We thank Weiliang Zhang (@FugueZ, Co-First Author) for his independent coding work on this study. 
 
 ### Citation
 
